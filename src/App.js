@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import backgroundImage from './assets/background/imageOnce.png';
+import Header from './components/Header/Header';
+import './App.css'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <Header />
+
+      <section
+        className="hero-section"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        <div className="hero-content container text-center">
+          <h1>Bem-vindo ao Meu Site Incrível!</h1>
+          <p className="lead">
+            Descubra nossos produtos e serviços fantásticos.
+          </p>
+          <button className="btn btn-primary btn-lg mt-3">Saiba Mais</button>
+        </div>
+      </section>
+
     </div>
   );
 }
