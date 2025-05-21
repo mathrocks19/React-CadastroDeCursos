@@ -1,9 +1,10 @@
-// src/App.js
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import backgroundImage from './assets/background/imageOnce.png';
+import backgroundImage from './assets/background/testeTron.png';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
